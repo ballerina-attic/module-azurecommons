@@ -29,7 +29,7 @@ public function generateCanonicalizedHeadersString(map<string> headers) returns 
     return result;
 }
 
-# Generates the storage services date string
+# Generates the storage services date string.
 #
 # + return - The storage services date string
 public function generateStorageDateString() returns string {
