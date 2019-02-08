@@ -22,7 +22,7 @@ public function generateCanonicalizedHeadersString(map<string> headers) returns 
     // TODO: sort headers - when sort functionality is availble
     string result = "";
     foreach var (key, value) in headers {
-      if (key.indexOf("x-ms-") == 0) {
+        if (key.indexOf("x-ms-") == 0) {
           result = result + key.toLower().trim() + ":" + value.trim() + "\n";
       }
     }
