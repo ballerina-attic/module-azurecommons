@@ -24,7 +24,7 @@ public function generateCanonicalizedHeadersString(map<string> headers) returns 
     foreach var (key, value) in headers {
         if (key.indexOf("x-ms-") == 0) {
             result = result + key.toLower().trim() + ":" + value.trim() + "\n";
-      }
+        }
     }
     return result;
 }
